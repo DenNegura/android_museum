@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageCategoryView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="15dp"
+                android:contentDescription="@string/image"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/missing" />
+
+            <TextView
+                android:id="@+id/titleCategoryView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/descriptionCategoryView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="0"
+            android:text=""
+            tools:ignore="InefficientWeight" />
+
+        <ImageButton
+            android:id="@+id/openCloseButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/image"
+            android:onClick="openCloseCountryFullDescription"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/down_up_arrow"
+            tools:ignore="RtlHardcoded" />
+
+        <ExpandableListView
+            android:id="@+id/categoryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="1dp"/>
+    </LinearLayout>
+
+</ScrollView>

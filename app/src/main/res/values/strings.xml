@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Museums</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Справочник музеев</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_country">Страны</string>
+    <string name="image">image</string>
+    <string name="read_btn">Читать</string>
+    <string name="text_main">
+        Музей -  учреждение, занимающееся сбором, изучением, хранением и экспонированием предметов — памятников естественной истории, материальной и духовной культуры, а также просветительской и популяризаторской деятельностью.
+        Слово музей происходит от греческого mouseĩon, что означает «храм музы». С начала эпохи Возрождения (Ренессанса) слово приобрело современное значение.
+    </string>
+</resources>
